@@ -1,6 +1,4 @@
-html, body {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -11,6 +9,7 @@ html {
 body {
     background-color: #fafaff;
     padding-top: 1px;
+    margin: 0;
 }
 
 nav {
@@ -52,33 +51,28 @@ main {
 }
 
 .name-container {
-    display: flex;
-    align-items: center;
-    height: calc(100vh - 3rem - 1px);
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: calc(100vh - 3rem);
+    align-items: start;
 }
 
 .main-my-name {
-    height: 65%;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-row: 1 / 2; 
     padding: 1rem;
-    /*align-items: center;*/
+    align-self: center;
 
 }
 
 .main-my-description {
-    height: 35%;
-    flex-basis: 100%;
     padding: 1rem;
+    max-width: 600px;
 }
 
 .job-title {
     font-size: 1.7rem;
     position: absolute;
-    bottom: 65%;
+    bottom: 75%;
 }
 
 .my-name {
@@ -90,13 +84,24 @@ main {
 }
 
 @media(min-width: 768px) {
- /**/
+    .name-container {
+        justify-items: center;
+    }
+
+    .main-my-name {
+        padding-right: 5rem;
+        padding-left: 5rem;
+
+    }
+    .main-my-description {
+        font-size: 1.5rem;
+    }
 }
 
 @media(min-width: 1024px) {
-/**/
-}
-
-@media(min-width: 1200px) {
-
+    .name-container {
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
 }
