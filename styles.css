@@ -77,11 +77,15 @@ main {
 }
 
 .my-name {
-    font-size: 3.5rem;
     margin-top: auto;
     margin-bottom: auto;
     position: relative;
     
+}
+
+.my-name h1 {
+    font-size: 3.5rem;
+    font-weight: 550;
 }
 
 @media(min-width: 768px) {
