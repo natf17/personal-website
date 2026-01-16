@@ -132,6 +132,41 @@ section {
     padding: 1rem;
 }
 
+footer {
+    background-color: #141b41;
+    color: #fafaff;    
+    padding-bottom: 2rem;
+}
+
+.contact-info-container p {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.contact-info-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info-container li {
+    padding: 1rem;
+}
+
+.contact-info-container a {
+    color: #fafaff;
+    text-decoration: none;
+}
+
+.contact-info-container a:hover {
+    color: #4e6cff;
+}
+
 @media(min-width: 768px) {
     .name-container {
         justify-items: center;
