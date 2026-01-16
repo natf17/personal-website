@@ -59,7 +59,7 @@ main {
 
 .main-my-name {
     grid-row: 1 / 2; 
-    padding: 1rem;
+    padding: 2rem;
     align-self: center;
 
 }
@@ -96,13 +96,14 @@ main {
     }
     .main-my-description {
         font-size: 1.5rem;
+        padding: 3rem;
     }
 }
 
 @media(min-width: 1024px) {
     .name-container {
         grid-template-rows: auto;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1.75fr 1fr;
         align-items: center;
     }
 }
