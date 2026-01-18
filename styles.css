@@ -167,6 +167,15 @@ footer {
     color: #4e6cff;
 }
 
+.tile-container a {
+    color: #141b41;
+    text-decoration: none;
+}
+
+.tile-container a:hover {
+    color: #4e6cff;
+}
+
 @media(min-width: 768px) {
     .name-container {
         justify-items: center;
